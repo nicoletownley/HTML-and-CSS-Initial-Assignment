@@ -1,6 +1,5 @@
-
 body {
-    background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.toptal.com%2Fdesigners%2Fsubtlepatterns%2Fpatterns%2Fconcrete_seamless.png&imgrefurl=https%3A%2F%2Fwww.toptal.com%2Fdesigners%2Fsubtlepatterns%2Fconcrete-seamless%2F&docid=dIvpXbpxA44lKM&tbnid=2IEvi8Tzne-vFM%3A&vet=10ahUKEwjDyP2is5DjAhWRcc0KHeRrBJ4QMwgrKAAwAA..i&w=400&h=400&bih=722&biw=1536&q=seamless%20concrete%20gray%20.png&ved=0ahUKEwjDyP2is5DjAhWRcc0KHeRrBJ4QMwgrKAAwAA&iact=mrc&uact=8../images/concrete_seamless.png');
+    background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.toptal.com%2Fdesigners%2Fsubtlepatterns%2Fpatterns%2Fconcrete_seamless.png&imgrefurl=https%3A%2F%2Fwww.toptal.com%2Fdesigners%2Fsubtlepatterns%2Fconcrete-seamless%2F&docid=dIvpXbpxA44lKM&tbnid=2IEvi8Tzne-vFM%3A&vet=10ahUKEwjDyP2is5DjAhWRcc0KHeRrBJ4QMwgrKAAwAA..i&w=400&h=400&bih=722&biw=1536&q=seamless%20concrete%20gray%20.png&ved=0ahUKEwjDyP2is5DjAhWRcc0KHeRrBJ4QMwgrKAAwAA&iact=mrc&uact=8../images/concrete_seamless.png");
     font-size: 18px;    
     line-height: 34px;
      font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -12,17 +11,18 @@ body {
     margin: 0 auto;
     clear: both;
     
+    
     }
     
-    h1, h2, h3, p {
+    h1, h2, p {
         margin-bottom: 20px;
     } 
     
-    p:last-child { 
+    p { 
         margin-bottom: 0;
     }
     
-    h1, h2, h3 { 
+    h1, h2 { 
         font-family: 'Georgia', Times, Times New Roman, serif;
       font-weight: 700;
       color: #4aaaa5;}
@@ -33,7 +33,7 @@ body {
           border-bottom: 3px solid #dddddd;;
           padding-bottom:20px;
       }
-      h2, h3 {font-size: 22px; 
+     h2 {font-size: 22px; 
       }
   
 
@@ -79,10 +79,7 @@ nav a {color: #9999;
 nav a :first-child {
     border-left: 0 none;}
 
-#main-bio {
-    padding-top: 130px;}
-
-.header {background: #ffffff;
+.Info {background: #ffffff;
 padding: 30px;
 position:absolute;
 left: 50%;
@@ -90,6 +87,7 @@ width: 100%;
 max-width: 960px;
 border: 1px solid #dddddd;
 margin-left: -480px;
+/* text-align: right; */
 }
 .auth-image {
     width: 200px;
@@ -97,16 +95,101 @@ margin-left: -480px;
     margin-top: 10px;
     margin-right: 25px;}
 
-h3, h2 {border-bottom: 2px solid #eeeeee;
+ h2 {border-bottom: 2px solid #eeeeee;
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 22px;}
 
  footer {background: #666666;
         color: #ffffff;
-        padding: 30px;
-        clear: both;
-        border-top: 8px solid #444445;
+        padding-top:  30px;
+         border-top: 8px solid #4aaaa5;
         color: #cccc;
         font-size: 12px;
-        text-align: center;}
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        clear: both;
+        }
+img{height: 200px;
+    width: 200px;
+     float: left;}
+
+#bio-texts {
+    margin-left: 220px;
+    overflow-wrap: break-word
+}
+  /* portfolio*/
+  .banner {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px; 
+  }
+  /*nth child  we a specifying a background colore for the even photo*/
+   
+  .banner:nth-child(even) {
+     margin-right: 40px;
+    }
+     /*opacity is the transparency level*/
+   
+    .banner img {
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+    }
+
+   .banner h2 {
+    border-bottom: 0%;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    position: absoulute;
+    bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom:  0;
+    font-weight: 300;
+   }
+
+
+
+ /*contact*/
+
+ #contact-form ul{
+    margin-bottom: 20px;
+
+ }
+ #contact-form li {
+     margin-bottom: 10 px;
+    }
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display:block;
+    width: 100%;
+}
+input[type=text],
+input[type=email],
+textarea{height 35px;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+iput [type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
